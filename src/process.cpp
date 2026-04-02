@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <vector>
 
+namespace moss {
 namespace mruntime {
 
 void Process::set_priority(int priority) {
@@ -75,3 +76,5 @@ uint32_t Process::get_cpu_count() {
 }
 
 }  // namespace mruntime
+
+}  // namespace moss

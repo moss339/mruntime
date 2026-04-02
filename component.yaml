@@ -1,0 +1,14 @@
+name: mruntime
+description: MOSS Runtime Management
+
+source:
+  root: .
+
+dependencies:
+  local:
+    - mcom
+
+build:
+  type: library
+  cmake_options:
+    CMAKE_BUILD_TYPE: Release

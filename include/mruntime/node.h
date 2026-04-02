@@ -13,6 +13,7 @@
 #include <vector>
 #include <functional>
 
+namespace moss {
 namespace mruntime {
 
 template<typename T>
@@ -41,6 +42,7 @@ public:
     NodeState get_state() const;
     const std::string& get_name() const;
     mdds::DomainId get_domain_id() const;
+    std::shared_ptr<mdds::DomainParticipant> get_participant() const { return participant_; }
 
     template<typename T>
     std::shared_ptr<Publisher<T>> create_publisher(const std::string& topic_name,
@@ -222,4 +224,5 @@ std::shared_ptr<Subscriber<T>> Node::create_subscriber(
 
 }  // namespace mruntime
 
+}  // namespace moss
 #endif  // MRUNTIME_NODE_H

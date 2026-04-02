@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include <string>
 
+namespace moss {
 namespace mruntime {
 
 class RuntimeError : public std::runtime_error {
@@ -11,3 +12,4 @@ public:
 };
 
 }  // namespace mruntime
+}  // namespace moss

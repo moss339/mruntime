@@ -2,6 +2,7 @@
 
 #include <cstdint>
 
+namespace moss {
 namespace mruntime {
 
 class Clock {
@@ -18,3 +19,4 @@ public:
 };
 
 }  // namespace mruntime
+}  // namespace moss

@@ -4,6 +4,7 @@
 #include <mruntime/clock.h>
 #include <memory>
 
+namespace moss {
 namespace mruntime {
 
 class Runtime : public std::enable_shared_from_this<Runtime> {
@@ -30,3 +31,4 @@ private:
 };
 
 }  // namespace mruntime
+}  // namespace moss

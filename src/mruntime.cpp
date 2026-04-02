@@ -1,6 +1,7 @@
 #include <mruntime/mruntime.h>
 #include <mruntime/types.h>
 
+namespace moss {
 namespace mruntime {
 
 Runtime::Runtime(const Config& config)
@@ -23,3 +24,5 @@ std::shared_ptr<Runtime> Runtime::create() {
 }
 
 }  // namespace mruntime
+
+}  // namespace moss

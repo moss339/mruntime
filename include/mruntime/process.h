@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <vector>
 
+namespace moss {
 namespace mruntime {
 
 class Process {
@@ -20,3 +21,4 @@ public:
 };
 
 }  // namespace mruntime
+}  // namespace moss

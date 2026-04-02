@@ -1,5 +1,6 @@
 #include <mruntime/node.h>
 
+namespace moss {
 namespace mruntime {
 
 NodeStateException::NodeStateException(NodeState current, NodeState expected)
@@ -117,3 +118,5 @@ void Node::validate_state(NodeState expected) const {
 }
 
 }  // namespace mruntime
+
+}  // namespace moss

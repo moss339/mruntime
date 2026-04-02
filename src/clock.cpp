@@ -4,6 +4,7 @@
 #include <time.h>
 #include <unistd.h>
 
+namespace moss {
 namespace mruntime {
 
 uint64_t Clock::uptime_ns() {
@@ -49,3 +50,5 @@ void Clock::sleep_ms(uint64_t ms) {
 }
 
 }  // namespace mruntime
+
+}  // namespace moss
